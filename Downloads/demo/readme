@@ -1,0 +1,4 @@
+Dans ce projet j’ai crcréé une API SPRINGBOOT qui ajoute les informations d’un utilisateur dans une base de données
+puis j’ai installé Spring sécurity pour gérer les connexion mais je n’ai pas eu le temps de terminer.
+
+enfin, j’ai créé une page HTML pour creer un compte, via l'api que j’ai réalisé en Java, en utilisant vue Js
