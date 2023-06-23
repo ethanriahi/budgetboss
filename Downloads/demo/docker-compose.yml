@@ -1,0 +1,17 @@
+version: "3.9"
+services:
+  articulate-db:
+    container_name: budgetboss-db
+    image: postgres:latest
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: test
+      POSTGRES_DB: budgetboss
+      POSTGRES_USER: test
+    volumes:
+      - data:/var/lib/postgresql/data
+      - ./init-db/db.sql:/docker-entrypoint-initdb.d/db.sql
+
+volumes:
+  data:
